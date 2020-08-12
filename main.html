@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>createsElement</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+        <p>Welcome to the site <b id='boldStuff2'>Earthling</b> </p> 
+
+       
+        <input type='button' onclick='changeText2()' value='Change Text'/>
+
+    <!--<button id="mybtn">Create</button>-->
+    
+<p>I'm Ready!!<b id="big">for Krabby patty pizza!</b></p>
+<input type="text" id="userInput" value="Enter text here">
+<input type="button" onclick="diffText" value="change Text">
+
+
+
+
+    <script src="main.js"></script>
+        
+    <script type="text/javascript">
+        function changeText2(){
+            var oldHTML = document.getElementById('para').innerHTML;
+	var newHTML = "<span style='color:#ffffff'>" + oldHTML + "</span>";
+
+            var userInput = document.getElementById('userInput').value;
+            document.getElementById('big').innerHTML = 'Tahoma';
+        }
+</script>
+
+        <script type="text/javascript">
+    function changeText(){
+    var userInput = document.getElementById('userInput').value;
+    document.getElementById('stuff').innerHTML = userInput;
+}
+
+
+        </script>
+        <p>Welcome to the site <b id='boldStuff2'>Earthling</b> </p> 
+        <input type='text' id='userInput' value='Enter Text Here' />
+        <input type='button' onclick='changeText2()' value='Change Text'/>
+        
+
+</body>
+</html>
